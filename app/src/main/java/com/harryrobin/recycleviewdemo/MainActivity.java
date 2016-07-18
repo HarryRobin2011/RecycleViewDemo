@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView.LayoutManager layoutManager;
     private RecycleDemoAdapter recycleDemoAdapter;
     private TextView alert;
+    private String aa = "SourceTree";
 
 
     @Override
