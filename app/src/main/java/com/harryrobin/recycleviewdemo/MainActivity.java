@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-
+import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private String[] datas;
     private RecyclerView.LayoutManager layoutManager;
     private RecycleDemoAdapter recycleDemoAdapter;
+    private TextView alert;
 
 
     @Override
@@ -28,11 +29,12 @@ public class MainActivity extends AppCompatActivity {
         for (int position = 0; position < 20; position++) {
             datas[position] = "测试" + position;
         }
-        initOperation();
         layoutManager = new LinearLayoutManager(this);
         recycleView.setHasFixedSize(true);
         recycleView.setLayoutManager(layoutManager);
         recycleDemoAdapter = new RecycleDemoAdapter(datas);
         recycleView.setAdapter(recycleDemoAdapter);
+        alert.setText(R.string.app_name);
+
     }
 }
