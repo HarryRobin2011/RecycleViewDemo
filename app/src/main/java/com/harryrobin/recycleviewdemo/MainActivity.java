@@ -14,7 +14,10 @@ public class MainActivity extends AppCompatActivity {
     private RecycleDemoAdapter recycleDemoAdapter;
     private TextView alert;
     private String aa = "SourceTree";
+    private String bb = "";
+    private String cc = "";
     private String dd = "dd";
+    private String ee = "3ee";
 
 
     @Override
